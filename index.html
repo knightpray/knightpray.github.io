@@ -4,6 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mick Barwood's 1kg Sausages</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+      }
+      header {
+        background-color: #fff;
+        box-shadow: 0px 5px 15px #bcbcbc;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-size: 3rem;
+        margin-top: 0;
+      }
+      nav {
+        text-align: right;
+      }
+      nav a {
+        color: #666;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        transition: color 0.3s;
+      }
+      nav a:hover {
+        color: #000;
+      }
+      main {
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0px 5px 15px #bcbcbc;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        line-height: 1.4;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        box-shadow: 0px 5px 15px #bcbcbc;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -28,21 +94,20 @@
           <li>1kg Beef Sausages</li>
           <li>1kg Pork Sausages</li>
           <li>1kg Chicken Sausages</li>
-          <li>1kg Vegetarian Sausages</li>
         </ul>
+        <img src="mick.jpg" alt="Assortment of Mick Barwood's sausages">
       </section>
       <section id="contact">
         <h2>Contact Us</h2>
-        <p>For more information about our products, please contact us at:</p>
-        <ul>
-          <li>Phone: 01772722195-1</li>
-          <li>Email: info@mickbarwoodsauages.com</li>
-          <li>Address: Lea Road Sausage Lane</li>
-        </ul>
-       </section>
-    <img src="mick.jpg" alt="Stunning man">
-  </main>
-  <footer>
-    <p>&copy; 2023 Mick Barwood's 1kg Sausages</p>
-  </footer>
-</body>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="6" cols="50"></textarea><br>
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </main>
+
